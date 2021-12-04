@@ -85,13 +85,11 @@ Pour pouvoir définir l'URI d'origine de votre serveur de base de données [Mong
 Une fois [MongoDB](https://www.mongodb.com) installé, vous aurez probablement besoin de modifier le script présent dans le fichier `package.json` selon votre configuration : 
 
 ```json
-
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mongo": "sudo mongod --dbpath /MONGO_db",
     "start": "nodemon server.js"
 },
-...
 ```
 
 > Ce script a été prévu pour une machine qui stocke les document dans un dossier `MONGO_db` à la racine de la machine.
